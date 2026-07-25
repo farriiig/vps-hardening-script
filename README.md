@@ -1,3 +1,34 @@
+# 🛡️ Ultimate VPS Hardening Script
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+
+یک اسکریپت تعاملی (Interactive) و هوشمند برای امن‌سازی سرورهای اوبونتو و دبیان. این ابزار تمام مراحل خسته‌کننده هاردنینگ را به یک فرآیند ساده و لذت‌بخش تبدیل می‌کند. ✨
+
+---
+
+## 🌟 قابلیت‌های کلیدی (Features)
+
+- **🛠️ کاملاً تعاملی:** پرسش و پاسخ مرحله‌به‌مرحله برای تنظیمات اختصاصی.
+- **👤 مدیریت کاربر:** ایجاد کاربر `sudo` جدید و غیرفعال‌سازی دسترسی مستقیم `root`.
+- **🔑 امنیت SSH:** نصب خودکار کلید عمومی (SSH Key) و تغییر پورت پیش‌فرض.
+- **🔥 فایروال هوشمند:** پیکربندی `UFW` با قابلیت باز کردن پورت‌های اختصاصی و پنل `3x-ui`.
+- **🚫 ضد نفوذ:** نصب و تنظیم `Fail2ban` برای جلوگیری از حملات Brute-force.
+- **🔄 آپدیت خودکار:** فعال‌سازی `Unattended-upgrades` برای دریافت وصله‌های امنیتی.
+- **⚙️ بهینه‌سازی هسته:** اعمال تنظیمات `sysctl` جهت مقاوم‌سازی شبکه در برابر حملات.
+- **🎨 ظاهر زیبا:** خروجی رنگی و دسته‌بندی شده برای تجربه کاربری بهتر.
+
+---
+
+## 🚀 شروع سریع (Quick Start)
+
+برای اجرای اسکریپت، کافیست دستورات زیر را به ترتیب در ترمینال خود وارد کنید:
+
+### ۱. ساخت فایل اسکریپت
+```bash
+nano harden.sh
 # VPS Hardening Script for Ubuntu/Debian
 
 A clean, interactive Bash script to harden a fresh VPS with safer SSH settings, firewall rules, optional Fail2ban, automatic security updates, and basic sysctl tuning.
